@@ -13,13 +13,13 @@ export class UploadService {
     const contentType = file.type;
     const bucket = new S3(
           {
-              accessKeyId: 'AKIA5A2AVKMY2ZZBTFRD',
-              secretAccessKey: 'nzzfQsGnnQdk+ke+LNYwvhZ8s/0JfR8Si+2ScWt8',
-              region: 'US_EAST_2'
+              accessKeyId: 'YOUR_ACCESS_KEY',
+              secretAccessKey: 'YOUR_SECRET_KEY',
+              region: 'YOUR_REGION'
           }
       );
       const params = {
-          Bucket: 'codebuildaws',
+          Bucket: 'YOUR_BUCKETNAME',
           Key: file.name,
           Body: file,
           ACL: 'public-read',
