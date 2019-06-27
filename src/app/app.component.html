@@ -1,0 +1,57 @@
+<!--<label class="btn btn-default">
+  <input type="file" (change)="selectFile($event)">
+</label>
+
+<button class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">Upload</button>
+
+The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>Video Asset - {{title}}</h1>
+  <form action="">
+    <label for="file">File</label>
+    <input type="file" (change)="selectFile($event)">
+    <br><br>
+    <label class="centerAlign" for="description">Description</label>
+    <textarea name="description" rows="5" cols="50"></textarea>
+    <br><br>
+    <label for="encoding">Encoding</label>
+    <select name="encoding">
+      <option value="None" selected>None</option>
+      <option value="Content Adaptive Multiple Bitrate MP4">Content Adaptive Multiple Bitrate MP4</option>
+      <option value="Adaptive Streaming">Adaptive Streaming</option>
+      <option value="Thumbnails">Thumbnails</option>
+      <option value="H264 Multiple Bitrate 1080p Audio 5.1">H264 Multiple Bitrate 1080p Audio 5.1</option>
+      <option value="H264 Multiple Bitrate 1080p">H264 Multiple Bitrate 1080p</option>
+      <option value="H264 Multiple Bitrate 16x9 for iOS">H264 Multiple Bitrate 16x9 for iOS</option>
+      <option value="H264 Multiple Bitrate 16x9 SD Audio 5.1">H264 Multiple Bitrate 16x9 SD Audio 5.1</option>
+      <option value="H264 Multiple Bitrate 16x9 SD">H264 Multiple Bitrate 16x9 SD</option>
+      <option value="H264 Multiple Bitrate 4K Audio 5.1">H264 Multiple Bitrate 4K Audio 5.1</option>
+      <option value="H264 Multiple Bitrate 4K">H264 Multiple Bitrate 4K</option>
+      <option value="H264 Multiple Bitrate 4x3 for iOS">H264 Multiple Bitrate 4x3 for iOS</option>
+      <option value="H264 Multiple Bitrate 4x3 SD Audio 5.1">H264 Multiple Bitrate 4x3 SD Audio 5.1</option>
+      <option value="H264 Multiple Bitrate 4x3 SD">H264 Multiple Bitrate 4x3 SD</option>
+      <option value="H264 Multiple Bitrate 720p Audio 5.1">H264 Multiple Bitrate 720p Audio 5.1</option>
+      <option value="H264 Multiple Bitrate 720p">H264 Multiple Bitrate 720p</option>
+      <option value="H264 Single Bitrate 1080p Audio 5.1">H264 Single Bitrate 1080p Audio 5.1</option>
+    </select>
+    <br><br>
+    <label for="encryption">Encryption</label>
+    <select name="encryption">
+      <option value="None" selected>None</option>
+      <option value="CommonEncryption">CommonEncryption</option>
+      <option value="EnvelopeEncrypted">EnvelopeEncrypted</option>
+      <option value="StorageEncrypted">StorageEncrypted</option>
+    </select>
+    <br><br>
+    <label class="centerAlign" for="subtitles">Subtitles</label>
+    <select name="subtitles" size="5" multiple>
+      <option class="subtitles" value="Arabic- Egyptian">Arabic- Egyptian</option>
+      <option class="subtitles" value="Chinese - Mandarin, Simplified">Chinese - Mandarin, Simplified</option>
+      <option class="subtitles" value="English - US">English - US</option>
+      <option class="subtitles" value="English - GB">English - GB</option>
+      <option class="subtitles" value="French">French</option>
+    </select>
+    <br><br>
+    <input type="submit" id="submit" value="Run Workflow" class="btn btn-success" [disabled]="!selectedFiles" (click)="upload()">
+  </form>
+</div>

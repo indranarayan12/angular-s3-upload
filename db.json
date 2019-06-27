@@ -1,0 +1,19 @@
+{
+  "workflow": [
+      {
+          "id": 1,
+          "firstname": "One",
+          "lastname": "one"
+      },
+      {
+          "id": 2,
+          "firstname": "Two",
+          "lastname": "two"
+      },
+      {
+          "id": 3,
+          "firstname": "Third",
+          "lastname": "third"
+      }
+  ]
+}
